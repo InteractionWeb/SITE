@@ -17,7 +17,7 @@
 
 .header,
 .hero,
-.features,
+.features{background-color: transparent;}
 .footer {
   position: relative;
   z-index: 1;
@@ -47,6 +47,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
@@ -104,6 +105,7 @@ body {
   border-radius: 16px;
   padding: 0.5rem 1.5rem;
   font-weight: 600;
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0 8px 32px 0 rgba(100, 100, 100, 0.37);
@@ -152,6 +154,7 @@ body {
 .btn-primary {
   background: rgba(255, 255, 255, 0.3);
   color: #222;
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0 8px 32px 0 rgba(100, 100, 100, 0.37);
@@ -166,6 +169,7 @@ body {
   background: rgba(255, 255, 255, 0.15);
   border: 2px solid rgba(0, 0, 0, 0.2);
   color: #222;
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   box-shadow: 0 8px 32px 0 rgba(100, 100, 100, 0.1);
   transition: background-color 0.5s ease;
@@ -180,11 +184,14 @@ body {
 /* Features Section */
 .features {
   padding: 3rem 1rem;
-  background: rgba(255, 255, 255, 0.1);
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   text-align: center;
   border-radius: 16px;
   box-shadow: 0 8px 32px 0 rgba(100, 100, 100, 0.05);
+  position: relative;
+  z-index: 1;
 }
 
 .features h2 {
@@ -206,13 +213,14 @@ body {
 }
 
 .feature-item {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.15);
   padding: 1.5rem;
   border-radius: 16px;
-  box-shadow: 0 8px 32px 0 rgba(100, 100, 100, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(100, 100, 100, 0.25);
   flex: 1 1 250px;
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .feature-item h3 {
